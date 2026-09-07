@@ -146,6 +146,11 @@
   .contact-links a{ color:var(--blue-deep); font-weight:600; text-decoration:none; font-size:15px; }
 
   footer{ text-align:center; padding:24px; font-size:12px; color:#8A94BE; }
+.clients-row{ display:flex; flex-wrap:wrap; gap:14px 10px; align-items:center; }
+.client-word{ font-family:'Fraunces',serif; font-weight:500; font-size:16px; color:#8492C4; letter-spacing:0.01em; padding:8px 4px; }
+.client-dot{ color: var(--line); font-size:13px; }
+.chips-wrap{ display:flex; flex-direction:column; gap:20px; }
+.chip-group{ display:flex; flex-wrap:wrap; gap:10px; }
 </style>
 </head>
 <body>
@@ -229,20 +234,46 @@
     </div>
   </div>
 </section>
-
+<section>
+  <div class="sec-label">Vybraní klienti</div>
+  <div class="clients-row">
+    <span class="client-word">Coca-Cola</span><span class="client-dot">·</span>
+    <span class="client-word">Mondelez</span><span class="client-dot">·</span>
+    <span class="client-word">Samsung</span><span class="client-dot">·</span>
+    <span class="client-word">Budějovický Budvar</span><span class="client-dot">·</span>
+    <span class="client-word">mBank</span><span class="client-dot">·</span>
+    <span class="client-word">AEG</span><span class="client-dot">·</span>
+    <span class="client-word">Kärcher</span><span class="client-dot">·</span>
+    <span class="client-word">Plzeňský Prazdroj</span><span class="client-dot">·</span>
+    <span class="client-word">Nestlé</span><span class="client-dot">·</span>
+    <span class="client-word">Heineken</span><span class="client-dot">·</span>
+    <span class="client-word">FCA</span><span class="client-dot">·</span>
+    <span class="client-word">Raiffeisenbank</span><span class="client-dot">·</span>
+    <span class="client-word">VISA</span><span class="client-dot">·</span>
+    <span class="client-word">Allegro</span>
+  </div>
+</section>
 <section>
   <div class="sec-label">Dovednosti & nástroje</div>
-  <div class="chips">
+  <div class="chips-wrap">
+  <div class="chip-group">
     <span class="chip">Obsahový marketing</span>
     <span class="chip">Mediální partnerství</span>
     <span class="chip">Projektové řízení</span>
     <span class="chip">Vyjednávání</span>
     <span class="chip">Aplikovaná improvizace</span>
-    <span class="chip chip-tool">Office 365 a Co-Pilot</span>
-    <span class="chip chip-tool">Claude</span>
-    <span class="chip chip-tool">Data Analyzer</span>
-    <span class="chip chip-tool">Vidra</span>
   </div>
+  <div class="chip-group">
+    <span class="chip">Office 365 a Co-Pilot</span>
+    <span class="chip">Claude</span>
+    <span class="chip">Data Analyzer</span>
+    <span class="chip">Vidra</span>
+  </div>
+  <div class="chip-group">
+    <span class="chip">Angličtina · C1</span>
+    <span class="chip">Francouzština · B2</span>
+  </div>
+</div>
 </section>
 
 <section class="contact" id="kontakt">
